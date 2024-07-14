@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import hospital from '../../assets/hospital.jpg';
+import keeperApp from '../../assets/note.jpg';
+import portfolio from '../../assets/portfolio.jpg';
+import todo from '../../assets/todo.jpg';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          src={hospital}
+          link="https://github.com/marshadn/Hospital-Management-System"
+          h3="Hospital Management System"
+          p="Hospital Web App"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={keeperApp}
+          link="https://github.com/marshadn/react-keepernote-app"
+          h3="Note Taking App"
+          p="Keepernote Web App"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
+          src={portfolio}
+          link="https://github.com/marshadn/marshad-portfolio"
+          h3="Portfolio"
+          p="Personal Portfolio"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={todo}
+          link="https://github.com/marshadn/react-basic-to-do-app"
+          h3="To-Do"
+          p="Basic To-Do App"
         />
       </div>
     </section>

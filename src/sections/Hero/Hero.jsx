@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/mars.png';
+import heroImg from '../../assets/marshadn.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -15,7 +15,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
+  const instagramIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
@@ -43,12 +43,12 @@ function Hero() {
         <h2>FullStack Developer</h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
+            <img src={instagramIcon} alt="Twitter icon" />
           </a>
           <a href="https://github.com/marshadn" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/marshadn" target="_blank">
+          <a href="https://www.linkedin.com/in/marshadn/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>

@@ -2,8 +2,8 @@ import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/marshadn.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
+import instagramDark from '../../assets/instagram-light.svg';
+import instagramLight from '../../assets/instagram-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
@@ -15,7 +15,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const instagramIcon = theme === 'light' ? twitterLight : twitterDark;
+  const instagramIcon = theme === 'light' ? instagramLight : instagramDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
@@ -25,7 +25,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile picture of Marshad"
         />
         <img
           className={styles.colorMode}
@@ -40,10 +40,10 @@ function Hero() {
           <br />
           Marshad
         </h1>
-        <h2>FullStack Developer</h2>
+        <h2>Web Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={instagramIcon} alt="Twitter icon" />
+          <a href="https://www.instagram.com/marshxadn" target="_blank">
+            <img src={instagramIcon} alt="Instagram icon" />
           </a>
           <a href="https://github.com/marshadn" target="_blank">
             <img src={githubIcon} alt="Github icon" />
